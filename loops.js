@@ -6,6 +6,9 @@
 // ***
 // ****
 // *****
+for (let i = 1; i <= 5; i++) {
+    console.log('*'.repeat(i));
+}
 
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen...
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
@@ -25,13 +28,26 @@
 // klaar!
 // ==========================================
 
+for (let i = 1; i <= 5; i++) {
+    if (i === 5) {
+        console.log('klaar!');
+    }else
+    console.log('loop');
+}
 
 
-
-
+// opd 3:
+for (let i = 0; i <= 9; i++) {
+    if (i > 3  && i <=5) {
+        console.log(`> ${i}`);
+    }else if (i >= 6 && i <= 9) {
+        console.log(`>> ${i}`);
+    }
+}
 // ==========================================
 // Opdracht 3: maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
-// Echter, vanaf het getal 3 komt er een > voor ieder getal te staan, en vanaf het getal 6 komt er >> voor ieder getal te staan.
+// Echter, vanaf het getal 3 komt er een > voor ieder getal te staan,
+// en vanaf het getal 6 komt er >> voor ieder getal te staan.
 // Verwachte uitkomsten:
 // 0
 // 1
@@ -47,7 +63,17 @@
 
 
 
-
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(`fizzbuzz`);
+    }else if (i % 3 === 0) {
+        console.log(`fizz`);
+    }else if (i % 5 === 0) {
+        console.log(`buzz`);
+    }else {
+        console.log(i);
+    }
+}
 
 // ==========================================
 // Opdracht 4 (BONUS): schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
